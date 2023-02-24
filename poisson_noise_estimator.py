@@ -1,5 +1,5 @@
 import numpy as np
-from tifffile import imread
+from tifffile import imread, imwrite
 import matplotlib.pyplot as plt
 from config import CFG
 
@@ -38,6 +38,8 @@ print('lamb_poisson=', mlp)
 gen_noisy = np.random.poisson(gt / mlp, gt.shape)
 gen_noisy = gen_noisy / gen_noisy.max()
 gen_noisy = np.uint16(gen_noisy * (2 ** 16 - 1))
+
+# imwrite(r'D:\Projects\STED_Noise_Estimation\image_files\generated_noisy.tif',gen_noisy)
 
 fig = plt.figure(figsize=(15, 10))
 fig.add_subplot(1, 3, 1)
