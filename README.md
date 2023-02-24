@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 # Installation
 ```
-!git clone https://github.com/vebrahimi1990/STED_Noise_Estimation.git
+git clone https://github.com/vebrahimi1990/STED_Noise_Estimation.git
 ``` 
 
 Import all the necessary parameters and direcotries into the ```config.py``` file.
